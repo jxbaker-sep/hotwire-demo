@@ -4,6 +4,11 @@
     ViewData["Title"] = "Home page";
 }
 
-<turbo-frame id="messages" src="/messages">
+<turbo-frame id="messages">
   <p>This message will be replaced by the response from /messages.</p>
 </turbo-frame>
+
+<form action="/messages" data-turbo-frame="messages">
+  <input name="message">
+  <button>Enter</button>
+</form>

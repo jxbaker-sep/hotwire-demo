@@ -1,5 +1,10 @@
+@model List<String>;
 
 <turbo-frame id="messages">
   <p>Hello world.</p>
+  @foreach (var message in Model)
+  {
+    <p>@message</p>
+  }
 </turbo-frame>
 Goodnight moon.
