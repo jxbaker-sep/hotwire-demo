@@ -4,11 +4,13 @@
     ViewData["Title"] = "Home page";
 }
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/6.0.5/signalr.min.js"></script>
+
 <turbo-frame id="messages">
   <p>This message will be replaced by the response from /messages.</p>
 </turbo-frame>
 
-<form action="/messages" data-turbo-frame="messages">
+<form action="/messages">
   <input name="message">
   <button>Enter</button>
 </form>
